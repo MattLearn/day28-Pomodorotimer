@@ -38,17 +38,17 @@ def timer_start():
     phase_check()
     if REPS % 8 == 0:
         header_lbl.config(text="Done!", fg=RED)
-        countdown(5)
-#        countdown(LONG_BREAK_MIN * 60)
+#        countdown(5)
+        countdown(LONG_BREAK_MIN * 60)
         window.after_cancel(COUNTER_ID)
     elif REPS % 2 == 0:
         header_lbl.config(text="Break", fg=PINK)
-        countdown(3)
-#        countdown(SHORT_BREAK_MIN)
+#        countdown(3)
+        countdown(SHORT_BREAK_MIN)
     else:
         header_lbl.config(text="Work!", fg=GREEN)
-        countdown(9)
-#        countdown(WORK_MIN* 60)
+#        countdown(9)
+        countdown(WORK_MIN* 60)
 
 
 def reset():
